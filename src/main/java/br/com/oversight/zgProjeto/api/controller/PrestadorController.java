@@ -3,6 +3,7 @@ package br.com.oversight.zgProjeto.api.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.oversight.zgProjeto.domainClient.dto.PrestadorDTO;
+import br.com.oversight.zgProjeto.domainClient.dto.QuitacaoItemDTO;
 import br.com.oversight.zgProjeto.domainClient.service.PrestadorService;
 
 @RestController
@@ -21,7 +23,7 @@ public class PrestadorController {
 
 	@GetMapping()
 	public ResponseEntity get() {
-		List<PrestadorDTO> prestadores = null;
+		Page<PrestadorDTO> prestadores = service.getPrestadores();
 		return ResponseEntity.ok(prestadores);
 	}
 
