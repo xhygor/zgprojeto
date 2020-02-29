@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.oversight.zgProjeto.domainClient.dto.BeneficiarioDTO;
-import br.com.oversight.zgProjeto.domainClient.entity.Beneficiario;
 import br.com.oversight.zgProjeto.domainClient.service.BeneficiarioService;
 
 @RestController
