@@ -1,0 +1,57 @@
+{"properties": [
+  {
+    "name": "spring.server.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.server.datasource.url'"
+  },
+  {
+    "name": "spring.client.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.client.datasource.url'"
+  },
+  {
+    "name": "spring.server.initialization-mode",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.server.initialization-mode'"
+  },
+  {
+    "name": "spring.server.datasource.initialization-mode",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.server.datasource.initialization-mode'"
+  },
+  {
+    "name": "spring.server.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.server.datasource.username'"
+  },
+  {
+    "name": "spring.server.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.server.datasource.password'"
+  },
+  {
+    "name": "spring.client.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.client.datasource.username'"
+  },
+  {
+    "name": "spring.client.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.client.datasource.password'"
+  },
+  {
+    "name": "spring.server.datasource.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.server.datasource.jdbc-url'"
+  },
+  {
+    "name": "spring.client.datasource.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.client.datasource.jdbc-url'"
+  },
+  {
+    "name": "spring.client.initialization-mode",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.client.initialization-mode'"
+  }
+]}

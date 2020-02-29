@@ -1,0 +1,7 @@
+POST http://localhost:8090/api/v1/login 
+
+RAW JSON
+{
+	"username":"895.888.880-69",
+	"password":"123456"
+}
