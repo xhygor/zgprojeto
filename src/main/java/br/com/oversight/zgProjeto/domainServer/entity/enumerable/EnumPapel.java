@@ -12,23 +12,21 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum EnumPapel implements GrantedAuthority {
 
-    ADMIN("Administrador"),
-    SECRETARIA("Secretaria"),
-    ALUNO("Aluno"),
-    USUARIO("Usuário");
+	ADMIN("Administrador"),
+	USUARIO("Usuário");
 
-    private final String descricao;
+	private final String descricao;
 
-    @Override
-    public String getAuthority() {
-        return name();
-    }
+	@Override
+	public String getAuthority() {
+		return name();
+	}
 
-    public static EnumPapel[] valuesVisivel() {
-        List<EnumPapel> lista = new ArrayList<>();
-        for (EnumPapel v : values()) {
-                lista.add(v);
-        }
-        return lista.toArray(new EnumPapel[lista.size()]);
-    }
+	public static EnumPapel[] valuesVisivel() {
+		List<EnumPapel> lista = new ArrayList<>();
+		for (EnumPapel v : values()) {
+			lista.add(v);
+		}
+		return lista.toArray(new EnumPapel[lista.size()]);
+	}
 }
