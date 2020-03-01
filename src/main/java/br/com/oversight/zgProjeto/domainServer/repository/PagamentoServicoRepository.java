@@ -8,5 +8,4 @@ import br.com.oversight.zgProjeto.domainServer.entity.PagementoServico;
 
 public interface PagamentoServicoRepository extends JpaRepository<PagementoServico, Long> {
 
-	Optional<PagementoServico> findByNg_prest(String ng_prest);
 }

@@ -33,11 +33,4 @@ public class PagamentoServicoService {
 		return pagamentoServico.map(PagamentoServicoDTO::create)
 				.orElseThrow(() -> new ObjectNotFoundException("Pagamento Servico não encontrato"));
 	}
-
-	public PagamentoServicoDTO getPagamentoServicoByNgPrest(String ngPrest) {
-		Optional<PagementoServico> pagamentoServico = rep.findByNg_prest(ngPrest);
-		return pagamentoServico.map(PagamentoServicoDTO::create)
-				.orElseThrow(() -> new ObjectNotFoundException("Pagamento Servico não encontrato"));
-	}
-
 }
