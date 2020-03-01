@@ -3,6 +3,7 @@ package br.com.oversight.zgProjeto.domainServer.dto;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.oversight.zgProjeto.domainServer.entity.PagementoServico;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class InfoDTO {
 
-	private List<PagementoDTO> row = new ArrayList<>();
+	private List<PagementoServico> row = new ArrayList<>();
 
 }

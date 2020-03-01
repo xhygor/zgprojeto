@@ -10,7 +10,7 @@ import java.util.List;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.Dom4JDriver;
 
-import br.com.oversight.zgProjeto.domainServer.dto.PagementoDTO;
+import br.com.oversight.zgProjeto.domainServer.entity.PagementoServico;
 import lombok.Data;
 
 @Data
@@ -23,15 +23,16 @@ public class XmlReader implements Serializable {
 	public XmlReader() {
 		this.xstream = new XStream(new Dom4JDriver());
 		this.xstream.alias("data", ArrayList.class);
-		this.xstream.processAnnotations(PagementoDTO.class);
+		this.xstream.processAnnotations(PagementoServico.class);
 		this.xstream.registerConverter(new DateConverter());
+		this.xstream.registerConverter(new AmountConverter());
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<PagementoDTO> converterXML(String url) throws IOException {
+	public List<PagementoServico> converterXML(String url) throws IOException {
 		@SuppressWarnings({ "rawtypes", "unused" })
-		ArrayList<PagementoDTO> enderecos = (ArrayList) this.xstream.fromXML(conect(url));
-		return (ArrayList<PagementoDTO>) xstream.fromXML(conect(url));
+		ArrayList<PagementoServico> enderecos = (ArrayList) this.xstream.fromXML(conect(url));
+		return (ArrayList<PagementoServico>) xstream.fromXML(conect(url));
 	}
 
 	private URL conect(String urlXml) throws IOException {
