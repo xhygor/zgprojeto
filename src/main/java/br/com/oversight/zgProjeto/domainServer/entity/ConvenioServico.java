@@ -27,7 +27,7 @@ public class ConvenioServico implements Serializable {
 
 	@NotNull(message = "Informe o idConvenio.")
 	@Column(precision = 10, scale = 0, nullable = false)
-	private Integer idConvenio;
+	private Long idConvenio;
 
 	@NotBlank(message = "Informe a url.")
 	@Length(min = 0, max = 255, message = "O limite do campo url é de 255 caracteres.")
